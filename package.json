@@ -1,0 +1,28 @@
+{
+  "name": "wall-ace-website-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WollemiPines/WALL-ACE-website-V1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WollemiPines/WALL-ACE-website-V1/issues"
+  },
+  "homepage": "https://github.com/WollemiPines/WALL-ACE-website-V1#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "nodemon": "^2.0.20",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2"
+  }
+}
