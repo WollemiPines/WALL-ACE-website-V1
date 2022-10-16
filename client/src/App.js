@@ -5,9 +5,10 @@ import Header from './components/header';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import Contact from './pages/contact';
-import Resume from './pages/resume';
 import Projects from './pages/projects';
 import Disclaimers from './pages/disclaimers';
+import Shop from './pages/shop';
+
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Route exact path="/Wall-Ace/" element={<Home />} />
       <Route exact path="/Wall-Ace/home" element={<Home />} />
       <Route exact path="/Wall-Ace/contact" element={<Contact />} />
-      <Route exact path="/Wall-Ace/shop" element={<Resume />} />
+      <Route exact path="/Wall-Ace/shop" element={<Shop />} />
       <Route exact path="/Wall-Ace/projects" element={<Projects />} />
       <Route exact path="/Wall-Ace/disclaimers" element={<Disclaimers />} />
       </Routes>

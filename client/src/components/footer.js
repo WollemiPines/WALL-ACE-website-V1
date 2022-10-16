@@ -6,8 +6,8 @@ const Footer = () =>{
         <footer>
         <div class="container">
          <p class="footer-text">Made by Chris Wallace 2022</p>
-         < InstaIcon/>
-         < FbIcon/>
+         {/* < InstaIcon/> */}
+         {/* < FbIcon/> */}
         </div>
       </footer>
     )

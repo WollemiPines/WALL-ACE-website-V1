@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navigation from './navigation';
+import Cart from './icon_cart';
 
 function Header() {
 
