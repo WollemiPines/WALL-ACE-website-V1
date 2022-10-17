@@ -4,8 +4,8 @@ import InstaIcon from './icon_insta';
 const Footer = () =>{
     return (
         <footer>
-        <div class="container">
-         <p class="footer-text">Made by Chris Wallace 2022</p>
+        <div className="container">
+         <p className="footer-text">Copyright Wall Ace 2022</p>
          {/* < InstaIcon/> */}
          {/* < FbIcon/> */}
         </div>

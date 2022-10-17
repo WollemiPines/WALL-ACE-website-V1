@@ -15,12 +15,12 @@ function App() {
     <div>
       <Header />
       <Routes>
-      <Route exact path="/Wall-Ace/" element={<Home />} />
-      <Route exact path="/Wall-Ace/home" element={<Home />} />
-      <Route exact path="/Wall-Ace/contact" element={<Contact />} />
-      <Route exact path="/Wall-Ace/shop" element={<Shop />} />
-      <Route exact path="/Wall-Ace/projects" element={<Projects />} />
-      <Route exact path="/Wall-Ace/disclaimers" element={<Disclaimers />} />
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/home" element={<Home />} />
+      <Route exact path="/contact" element={<Contact />} />
+      <Route exact path="/shop" element={<Shop />} />
+      <Route exact path="/projects" element={<Projects />} />
+      <Route exact path="/disclaimers" element={<Disclaimers />} />
       </Routes>
       <Footer />
     </div>

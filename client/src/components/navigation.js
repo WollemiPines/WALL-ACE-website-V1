@@ -5,22 +5,22 @@ export default function Navigation() {
   return (
 
       <div>
-        <nav class='nav-list'>
+        <nav className='nav-list'>
           <ul>
-            <li class="h-ref">
-              <Link to="/Wall-Ace/home">Home</Link>
+            <li className="h-ref">
+              <Link to="/home">Home</Link>
             </li>
-            <li class="h-ref">
-              <Link to="/Wall-Ace/contact">Contact</Link>
+            <li className="h-ref">
+              <Link to="/contact">Contact</Link>
             </li>
-            <li class="h-ref">
-              <Link to="/Wall-Ace/shop">Shop</Link>
+            <li className="h-ref">
+              <Link to="/shop">Shop</Link>
             </li>
-            <li class="h-ref">
-              <Link to="/Wall-Ace/projects">Projects</Link>
+            <li className="h-ref">
+              <Link to="/projects">Projects</Link>
             </li>
-            <li class="h-ref">
-              <Link to="/Wall-Ace/disclaimers">Disclaimers</Link>
+            <li className="h-ref">
+              <Link to="/disclaimers">Disclaimers</Link>
             </li>
           </ul>
         </nav>
