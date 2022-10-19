@@ -4,9 +4,11 @@ import { Router, Link } from 'react-router-dom';
 export default function Cart() {
   return (
 
-      <div className="h-ref">
+      <div className="cart_icon_container">
       
-         <Link to="/Wall-Ace/cart">  <img href="./images/cart_icon"/></Link>
+         <Link to="/cart">  
+         <img src="./images/cart_icon.png"/>
+         </Link>
   
       </div>
 

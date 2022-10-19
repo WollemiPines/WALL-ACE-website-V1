@@ -23,7 +23,8 @@
     "url": "https://github.com/WollemiPines/WALL-ACE-website-V1/issues"
   },
   "dependencies": {
-    "concurrently": "^7.4.0"
+    "concurrently": "^7.4.0",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
     "web-vitals": "^3.0.3"

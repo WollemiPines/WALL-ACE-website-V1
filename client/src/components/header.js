@@ -12,9 +12,10 @@ function Header() {
         <Cart />
 
       </div>
+      
+      </div>
       <div className="header-links">
         <Navigation />
-      </div>
       </div>
     </div>
   );

@@ -1,5 +1,113 @@
-.header_container{
+/* Variable directory */
+:root {
+  --dark: #13293d;
+  --light: #fff;
+  --background: #ffffff;
+  --header_text: rgb(86, 150, 59);
+  --contrast_text: rgb(28, 117, 47);
+  --button_color: rgb(120, 195, 139);
+  --button_color_active:rgb(72, 161, 94);
+}
+
+.header_container_two{
   background-image: url("./images/header_photo.jpeg");
-  background-size: 100%, 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
+
+}
+.header_title{
+  padding-left: 20px;
+}
+
+.cart_icon_testblank{
+  background-image: url("./images/cart_icon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color:rgb(42, 147, 0);
+  width: 100%;
+}
+
+.nav-list a :active :hover{
+  color: rgb(32, 102, 4);
+}
+
+.nav-list a :visited{
+  color: inherit;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+
+/* Link fottating */
+
+.nav-list a:hover{
+  padding:5px;
+  background-color: var(--button_color);
+  border-radius: 15px 6px 15px;
+  transform: skew(-25deg);
+  text-decoration: none;
+}
+.nav-list a:link{
+  padding:5px;
+  font-size: 110%;
+  color: var(--header_text);
+  text-decoration: none;
+}
+ a:link{
+  padding:5px;
+  font-size: 110%;
+  color: var(--header_text);
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+}
+a:visited{
+  padding:5px;
+  font-size: 110%;
+  color: var(--header_text);
+  text-decoration: none;
+}
+/* Footer */
+footer{
+  width:100%;
+  background-color: var(--background);
+  padding-top:37px;
+}
+.container{
+  text-align: center;
+  border-top:3px var(--button_color) solid;
+  padding: 15px;
+}
+.footer-text{
+  font-size: 12px;
+}
+nav {
+  text-decoration: none;
+}
+/* Resizing page */
+@media screen and (max-width: 980px) {
+  .card, .card img[src$=".png"]{
+    max-width: 20rem;
+  }
+  }
+
+@media screen and (max-width: 520px) {
+  .card, .card img[src$=".png"]{
+    max-width: 15rem;
+  }
+
+
 }
