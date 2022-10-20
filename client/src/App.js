@@ -21,6 +21,9 @@ import Shop from './pages/shop';
 import CartPage from './pages/cartPage';
 import Detail from "./pages/Detail"
 import NotFound from "./pages/404NotFound"
+import Signup from './pages/signUp';
+import Login from './pages/Login';
+import PurchaceComplete from './pages/purchaceComplete';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -57,6 +60,9 @@ function App() {
       <Route exact path="/disclaimers" element={<Disclaimers />} />
       <Route exact path="/cart" element={<CartPage />} />
       <Route exact path="/products/:id" element={<Detail />} />
+      <Route exact path="/signup" element={<Signup />} />
+      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/purchacecomplete" element={<PurchaceComplete />} />
       <Route exact path="*" element={<NotFound />} />
       </Routes>
       <Footer />

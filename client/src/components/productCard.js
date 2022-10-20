@@ -14,7 +14,16 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ProductCard() {
+//       <ProductCard
+// key={product._id}
+// _id={product._id}
+// image={product.image}
+// name={product.name}
+// price={product.price}
+// quantity={product.quantity}
+// />
+
+export default function ProductCard(key, _id, image, name, price, quantity) {
   const classes = useStyles();
 
   return (
@@ -22,27 +31,26 @@ export default function ProductCard() {
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt={name}
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          image={image}
+          title={name}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            {price}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          Add to Cart
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Remove From Cart
         </Button>
       </CardActions>
     </Card>
