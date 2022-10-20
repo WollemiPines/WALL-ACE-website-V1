@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "start": "node server --ignore client",
-    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "develop": "export NODE_OPTIONS=--openssl-legacy-provider && concurrently \"cd server && npm run start\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/WollemiPines/WALL-ACE-website-V1/issues"
   },
-  "dependencies": {
+  "dependencies": { 
     "concurrently": "^7.4.0",
     "dotenv": "^16.0.3"
   },

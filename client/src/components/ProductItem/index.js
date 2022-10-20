@@ -57,4 +57,4 @@ function ProductItem(item) {
   );
 }
 
-export default ProductItem;
+export default ProductItem
