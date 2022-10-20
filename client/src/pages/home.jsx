@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Button } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
+import { Link as RouterLink } from 'react-router-dom';
+
 
 class Home extends React.Component {
     
@@ -14,7 +16,7 @@ class Home extends React.Component {
   alignItems="stretch"
 >
         <h1>homepage</h1>
-       <Button color="primary">Shop Now</Button>;
+        <Button variant="contained" color="primary" disableElevation component={RouterLink} to="/shop"> Shop Now! </Button>
        </Grid>
  </div>
   )

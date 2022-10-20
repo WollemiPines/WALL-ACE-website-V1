@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
+import TextField from '@material-ui/core/TextField';
+import { Button } from '@material-ui/core';
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -57,26 +58,30 @@ function Signup(props) {
         </div>
         <div className="flex-row space-between my-2">
           <label htmlFor="email">Email:</label>
-          <input
-            placeholder="youremail@test.com"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
+          <TextField
+          label="Email@email.com" 
+          name="email"
+          type="email" 
+          variant="outlined"
+          id="email"
+          onChange={handleChange}
           />
         </div>
         <div className="flex-row space-between my-2">
           <label htmlFor="pwd">Password:</label>
-          <input
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
+          <TextField
+          id="pwd"
+          label="Password"
+          name="password"
+          type="password"
+          autoComplete="current-password"
+          variant="outlined"
+          onChange={handleChange}
+        />
+     
         </div>
-        <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
+        <div>
+          <Button type="submit" color="primary">Submit</Button>
         </div>
       </form>
     </div>

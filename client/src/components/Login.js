@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
-import { Link } from 'react-router-dom';
 import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
+import TextField from '@material-ui/core/TextField';
+import { makeStyles } from '@material-ui/core/styles';
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -36,12 +37,14 @@ function Login(props) {
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
           <label htmlFor="email">Email address:</label>
-          <input
-            placeholder="youremail@test.com"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
+
+          <TextField
+          label="Email@email.com" 
+          name="email"
+          type="email" 
+          variant="outlined"
+          id="email"
+          onChange={handleChange}
           />
         </div>
         <div className="flex-row space-between my-2">

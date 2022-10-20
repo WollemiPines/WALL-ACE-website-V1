@@ -17,6 +17,13 @@
 }
 .header_title{
   padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_title_login_cart{
+  display: flex;
+ 
 }
 
 .cart_icon_testblank{
