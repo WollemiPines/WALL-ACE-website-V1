@@ -36,7 +36,7 @@ db.once('open', async () => {
         Stretch between 3.5kn and 4.5kn - 2%`,
       image: 'cookie-tin.jpg',
       category: [categories[1]._id, categories[6]._id],
-      price: $79,
+      price: 79,
       quantity: 20
     },
     {
