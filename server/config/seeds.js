@@ -5,11 +5,14 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Climbing' },
+    { name: 'Slacklining' },
+    { name: 'Rope Access' },
+    { name: 'Sewing Service' },
+    { name: 'Bags' },
+    { name: 'Rope Pro' },
+    { name: 'Webbing' },
+    { name: 'Accesories' }
   ]);
 
   console.log('categories seeded');
@@ -18,30 +21,107 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: 'Duct Tape',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+        `Looking for a lightweight, low stretch parkline webbing at an unbeatable price, look no further, duct tape is the answer. 
+        At only 27.5 grams per meter it's the second lightest slackline webbing in the world, and the comfiest UHMWPE, you'll hardly notice it in your backpack or underfoot.
+        
+        Width - 25mm
+        Construction - UHMWPE centre and purple nylon edges
+        Weight Per Meter - 27.5g
+        MBS (weblock) - 13.7kn
+        MBS Sewn Loop - 13.7kn
+        WLL - 4.5kn
+        
+        Stretch between 3.5kn and 4.5kn - 2%`,
       image: 'cookie-tin.jpg',
-      category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      category: [categories[1]._id, categories[6]._id],
+      price: $79,
+      quantity: 20
     },
     {
-      name: 'Canned Coffee',
+      name: 'Bum Bag V2.0',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+        `V2.0 Is here!
+
+        The new buckle system is the most secure on the market, it will not unclip accidentally and it will not loosen over time, A tricky thing to accomplish but here it is!
+        
+        Other changes include upgrading the zips to the world leading YKK style and changing the clip loop location to the other side of the bag (Greater security for your keys).
+        
+        At 110 grams, its still lightweight as ever and ready for your next adventure.
+        
+         
+        
+        Designed by big wall climbing legend John Middendorf (inventor of the modern-day portaledge), this is a must-have for any vertical explorers. 
+        
+         
+        
+        Constructed from 1000D Cordura Nylon and ultra-strong V135 UV stabilized thread, this piece of kit will be with you for years. Built with heavy abuse in mind, it is ideal for scaping up chimneys, everyday use in Rope Access, or simply for keeping your things on you at a festival.
+        
+         
+        
+        Climbing
+        
+        The Wall Ace / D4 Bum Bag is the ideal multi-pitch companion. Big enough to comfortably fit your phone, keys, snacks, and 750mL water bottle (flexible type) but not too big to get in the way. For tight squeezes or awkward jams, simply rotate the bag around your body.
+        
+         
+        
+        Highlining
+        
+        Whether rigging on small ledges, sessioning a trickline, or going for huge crossings, the ability to safely and securely carry your phone and other essentials is invaluable.
+        
+         
+        
+        Rope Access
+        
+        A great way to free up space and weight on your harness and keep your phone and valuables free from accidental crushing. Enough room for a buff, sunscreen, sunglasses, phone, wallet, keys, and more.
+        
+         
+        
+        Caving
+        
+        For caves with moderately small passages, the Wall Ace Bum Bag is an excellent way to ditch the backpack, taking only what you need. Simply rotate it onto your back for stomach crawls or vice versa.
+        
+        For tight squeezes and narrow passages, check out the Wall Ace Leg Bag, a one of a kind, designed to fit through any constriction.
+        
+         
+        
+        Festivals
+        
+        These contrasting colours and retro design matches with any festival outfit, a great way to avoid losing valuables and always having what you need, when you need it. `,
       image: 'canned-coffee.jpg',
-      category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
+      category: [categories[0]._id, categories[2]._id, categories[2]._id, categories[4]._id],
+      price: 55,
+      quantity: 10
     },
     {
-      name: 'Toilet Paper',
-      category: categories[1]._id,
+      name: 'Steel Cable - 25mm UHMWPE High Strength Webbing',
+      category: [categories[1]._id, categories[6]._id],
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
-      price: 7.99,
+        `The comfiest low stretch webbing at an unbeatable price, seriously we'll match any comparable UHMWPE webbing on the market*.
+
+        This is a complete mainline and backup line combo. 
+        75m main, 83m backup with 4x sewn loops included.
+        This webbing has been used to break the Austalian length record at 777m and is set to continue helping slackliners push the boundries. 
+        
+        These modular rigs make long slacklines a breeze. Simply connect more together to extend your webbing.
+        The offset loop sizes, a Wall Ace innovation, provides the most lightweight and seamless connection possible. The reviews have been unanimous, leash rings simply don't get caught!
+        
+        Width - 25mm
+        Construction - UHMWPE centre and purple nylon edges
+        Total Weight - 6.0kg
+        Weight Per Meter - 37.5g
+        MBS (weblock) - 27kn
+        MBS Sewn Loop - 27kn
+        WLL - 6.5kn
+        
+        Stretch between 3.5kn and 4.5kn - 2% 
+        
+        Limited stock remaining
+        
+        Please read and understand all associated disclaimers before use. Product photos are for demonstration only and are not intended as rigging advice or instruction.
+        *Price match is only valid for comparable UHMWPE webbings designed and sold for slackline use, price match is only related to retail price of comparable goods including measure, cutting and sewing costs (not inculding shipping).`,
+      price: 599,
       quantity: 20
     },
     {
