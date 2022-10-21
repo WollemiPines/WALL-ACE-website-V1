@@ -5,14 +5,14 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Climbing' },
-    { name: 'Slacklining' },
-    { name: 'Rope Access' },
-    { name: 'Sewing Service' },
-    { name: 'Bags' },
-    { name: 'Rope Pro' },
-    { name: 'Webbing' },
-    { name: 'Accesories' }
+    { name: 'Climbing' }, //0
+    { name: 'Slacklining' }, //1
+    { name: 'Rope Access' }, //2
+    { name: 'Sewing Service' }, //3
+    { name: 'Bags' }, //4
+    { name: 'Rope Pro' }, //5
+    { name: 'Webbing' }, //6
+    { name: 'Accesories' } //7
   ]);
 
   console.log('categories seeded');
@@ -44,53 +44,33 @@ db.once('open', async () => {
       description:
         `V2.0 Is here!
 
-        The new buckle system is the most secure on the market, it will not unclip accidentally and it will not loosen over time, A tricky thing to accomplish but here it is!
-        
-        Other changes include upgrading the zips to the world leading YKK style and changing the clip loop location to the other side of the bag (Greater security for your keys).
-        
-        At 110 grams, its still lightweight as ever and ready for your next adventure.
-        
-         
-        
-        Designed by big wall climbing legend John Middendorf (inventor of the modern-day portaledge), this is a must-have for any vertical explorers. 
-        
-         
-        
-        Constructed from 1000D Cordura Nylon and ultra-strong V135 UV stabilized thread, this piece of kit will be with you for years. Built with heavy abuse in mind, it is ideal for scaping up chimneys, everyday use in Rope Access, or simply for keeping your things on you at a festival.
-        
-         
+        The new buckle system is the most secure on the market, it will not unclip accidentally and it will not loosen over time, A tricky thing to accomplish but here it is! Other changes include upgrading the zips to the world leading YKK style and changing the clip loop location to the other side of the bag (Greater security for your keys). At 110 grams, its still lightweight as ever and ready for your next adventure. Designed by big wall climbing legend John Middendorf (inventor of the modern-day portaledge), this is a must-have for any vertical explorers. Constructed from 1000D Cordura Nylon and ultra-strong V135 UV stabilized thread, this piece of kit will be with you for years. Built with heavy abuse in mind, it is ideal for scaping up chimneys, everyday use in Rope Access, or simply for keeping your things on you at a festival.
         
         Climbing
         
         The Wall Ace / D4 Bum Bag is the ideal multi-pitch companion. Big enough to comfortably fit your phone, keys, snacks, and 750mL water bottle (flexible type) but not too big to get in the way. For tight squeezes or awkward jams, simply rotate the bag around your body.
-        
-         
-        
+
         Highlining
         
         Whether rigging on small ledges, sessioning a trickline, or going for huge crossings, the ability to safely and securely carry your phone and other essentials is invaluable.
-        
-         
-        
+      
         Rope Access
         
         A great way to free up space and weight on your harness and keep your phone and valuables free from accidental crushing. Enough room for a buff, sunscreen, sunglasses, phone, wallet, keys, and more.
         
-         
-        
+
         Caving
         
         For caves with moderately small passages, the Wall Ace Bum Bag is an excellent way to ditch the backpack, taking only what you need. Simply rotate it onto your back for stomach crawls or vice versa.
         
         For tight squeezes and narrow passages, check out the Wall Ace Leg Bag, a one of a kind, designed to fit through any constriction.
-        
-         
+
         
         Festivals
         
         These contrasting colours and retro design matches with any festival outfit, a great way to avoid losing valuables and always having what you need, when you need it. `,
       image: 'canned-coffee.jpg',
-      category: [categories[0]._id, categories[2]._id, categories[2]._id, categories[4]._id],
+      category: [categories[0]._id, categories[1]._id, categories[2]._id, categories[4]._id],
       price: 55,
       quantity: 10
     },
@@ -125,49 +105,121 @@ db.once('open', async () => {
       quantity: 20
     },
     {
-      name: 'Handmade Soap',
-      category: categories[1]._id,
+      name: 'Abseil Pro - Rope Protection',
+      category: [categories[0]._id, categories[1]._id, categories[2]._id, categories[5]._id],
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
-      price: 3.99,
+       `Constructed from super strong 12oz Canvas Eyre Tearlock, these lightweight pieces will protect your ropes against abrasive edges. Designed to pack small and fit un-noticed in any backpack, they're the ultimate in easy and affordable rope pro, without sacrificing durability. 
+
+       Availible in either single or double layer. 
+       Choose single layer for lightweight and suple protection when abseiling and general use.
+       Choose double layer for a longer lifespan or more aggresive use (pulling ropes up over it). 
+       
+      
+       Abseil Pro - 55cm
+       
+       Forget annoying prussic's and cord tie-offs, these medium length rope pros are the easiest to secure on the market. The innovative design allows you to simply cinch the cord down, holding it securely in position. Features Include;
+     
+       - Enough room to fit 3 strands of 11mm rope
+       
+       - Simply fix two or more alongside each other to create more room inside. Two stacked together comfortably fit a couple of spansets.
+       
+       - Revolutionary cinch design, the easiest to use on the market.
+       
+       - Only 75 grams per piece (single layer) and 115g for double layer`,
+      price: 20,
       quantity: 50
     },
     {
-      name: 'Set of Wooden Spoons',
-      category: categories[1]._id,
+      name: 'DC Rope Apparel - The Bowtie (Small)',
+      category: [categories[0]._id, categories[1]._id, categories[2]._id, categories[5]._id],
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
-      price: 14.99,
+        `Dress your ropes up in the latest DC (Dirt Cheap) Rope Apparel from Wall Ace. 
+ 
+        Designed to maximise your protection at a minimum of bucks, the Bowtie is the smallest option in the range. At 350mm long by 100mm wide (when opened), it's perfect for single ropes or multiples of thinner cords, think dyneema whoopies and 8mm static. 
+        Made from single layer heavy duty 18oz canvas in a sneaky black with 25mm purple velcro. This snazzy combo is the very definition of business casual. 
+        
+        Don't be fooled, this is in no way inferior to other rope pro options on the market, in fact it's heavier duty than most, Wall Ace can achive such low costs purely by stripping out all the unessecary extras. This means no neat trims, fancy clip loops or even branded labels. The DC Rope Apparel Range is 100% pure abrasion resistance. 
+        
+        Don't forget to check out the larger sizes and bulk order discounts too!`,
+      price: 6.50,
       quantity: 100
     },
     {
-      name: 'Camera',
-      category: categories[2]._id,
+      name: 'DC Rope Apparel - The Blazer',
+      category: [categories[0]._id, categories[1]._id, categories[2]._id, categories[5]._id],
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
+        `Dress your ropes up in the latest DC (Dirt Cheap) Rope Apparel from Wall Ace. 
+ 
+        Designed to maximise your protection at a minimum of bucks, the Blazer is the medium option in the range. At 450mm long by 130mm wide (when opened), it's perfect for single spansets or multiples of ropes, think BFK anchor padding. 
+        Made from single layer heavy duty 18oz canvas in a sneaky black with 25mm purple velcro. This snazzy combo is the very definition of business casual. 
+        
+        Don't be fooled, this is in no way inferior to other rope pro options on the market, in fact it's heavier duty than most, Wall Ace can achive such low costs purely by stripping out all the unessecary extras. This means no neat trims, fancy clip loops or even branded labels. The DC Rope Apparel Range is 100% pure abrasion resistance. 
+        
+        Don't forget to check out the other sizes and bulk order discounts too!`,
       image: 'camera.jpg',
-      price: 399.99,
-      quantity: 30
-    },
-    {
-      name: 'Tablet',
-      category: categories[2]._id,
-      description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      price: 199.99,
-      quantity: 30
-    },
-    {
-      name: 'Tales at Bedtime',
-      category: categories[3]._id,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
-      price: 9.99,
+      price: 8.50,
       quantity: 100
+    },
+    {
+      name: 'Bomber Pro - Rope Protection',
+      category: [categories[0]._id, categories[1]._id, categories[2]._id, categories[5]._id],
+      description:
+       `Need an easy and elegant solution to protecting gnarley edges, the Wall Ace Bomber Pro is it. Constructed from heavy-duty carpet and lined with a bomber 12oz canvas, these adjustable rope pros are made to last.
+
+       - Adjustable size, fits several strands of spansets at its maximum (12cm wide) or cinches tight around a single sling at its minimum (6cm)
+       - Easy to use
+       - Multiple bombproof clip off points
+       - Soft outer layer is easy on sensitive structures and painted walls.
+       - Comes with 2x velcro straps, making it the most versatile piece of rope protection in your kit. Simply lay it out flat, protecting a large section of edge, and strap your anchor or ropes securely to it. 
+       - Heavy duty but still lightweight at only 350g per piece`,
+      image: 'tablet.jpg',
+      price: 40,
+      quantity: 2
+    },
+    {
+      name: 'The Tuxedo - Rope Pro Assortment',
+      category: [categories[0]._id, categories[1]._id, categories[2]._id, categories[5]._id],
+      description:
+       `Just as the carpenter can never have enough clamps and the influencer, enough shoes, the highliner can never have enough rope pros. This tidy kit will supply you with a nice amount for a standard highline rig.
+       Save $15 when you get this complete rope pro kit and go buy yourself a nice hot meal... or you could spend it on something else here and then maybe I can afford to eat food too.
+
+       The Bowtie's - 35cm (Thats the 3x small ones)
+       
+       These mirco rope pros are ideal for padding 8mm rope or whoppie slings around boulders and other rough edges
+       
+
+       The Blazers's - 45cm (Thats the 3x medium ones)
+       
+       These medium size pros are an all round exellent choice for all things anchors. Enough space to fit a spanset inside or multiple strands of thick static rope (hint fix two along side each other for even more room).
+       
+       
+       Abseil Pro - 55cm (Thats the 2x orange ones)
+       
+       Forget annoying prussic's and cord tie-offs, these medium to long rope pros are the easiest to secure on the market. The innovative design allows you to simply cinch the cord down, holding it securely in position. Features Include;
+       
+       - Enough room to fit 3 strands of 11mm rope
+       
+       - Simply fix two or more alongside each other to create more room inside. Two stacked together comfortably fit a couple of spansets.
+       
+       - Revolutionary cinch design, the easiest to use on the market.
+       
+       - Only 90 grams per piece
+       
+       Bomber Pro (Thats the big fuzzy bomber one in the back)
+       Constructed from heavy-duty carpet and lined with a bomber 16oz canvas, these adjustable rope pros are made to last.
+       
+       - Adjustable size, fits several strands of spansets at its maximum (12cm wide) or cinches tight around a single sling at its minimum (6cm)
+       
+       - Easy to use
+       
+       - Multiple bombproof clip off points
+       
+       - Soft outer layer is easy on sensitive structures and painted walls.- Comes with 2x velcro straps, making it the most versatile piece of rope protection in your kit. Simply lay it out flat, protecting a large section of edge, and strap your anchor or ropes securely to it.
+       
+       - Heavy duty but still lightweight at only 350g per piece`,
+      image: 'bedtime-book.jpg',
+      price: 120,
+      quantity: 2
     },
     {
       name: 'Spinning Top',
