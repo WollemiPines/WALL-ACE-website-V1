@@ -72,8 +72,8 @@ function ProductCard(item) {
     // </div>
 
 
-
-  <Card className={classes.root}>
+<div className='product-card'>
+ 
     <Link to={`/products/${_id}`}>
   <CardActionArea>
   <img
@@ -99,7 +99,8 @@ function ProductCard(item) {
       Remove From Cart
     </Button>
   </CardActions>
-</Card>
+
+</div>
   );
 }
 

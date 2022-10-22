@@ -1,11 +1,35 @@
 import React, { useEffect } from 'react';
-import ProductItem from '../ProductItem';
+import ProductCard from '../productCard';
 import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { useQuery } from '@apollo/client';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
-import spinner from '../../assets/spinner.gif';
+import { makeStyles } from '@material-ui/core/styles';
+import ImageList from '@material-ui/core/ImageList';
+import ImageListItem from '@material-ui/core/ImageListItem';
+import ImageListItemBar from '@material-ui/core/ImageListItemBar';
+import ListSubheader from '@material-ui/core/ListSubheader';
+import IconButton from '@material-ui/core/IconButton';
+import InfoIcon from '@material-ui/icons/Info';
+import itemData from './itemData';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+  },
+  imageList: {
+    width: 500,
+    height: 450,
+  },
+  icon: {
+    color: 'rgba(255, 255, 255, 0.54)',
+  },
+}));
 
 function ProductList() {
   const [state, dispatch] = useStoreContext();
@@ -42,14 +66,17 @@ function ProductList() {
       (product) => product.category._id === currentCategory
     );
   }
+  const classes = useStyles();
 
   return (
-    <div className="my-2">
-      <h2>Shop</h2>
-      {state.products.length ? (
-        <div className="flex-row">
-          {filterProducts().map((product) => (
-            <ProductItem
+
+    <div className={classes.root}>
+    <ImageList rowHeight={180} className={classes.imageList}>
+      <ImageListItem key="Subheader" cols={2} style={{ height: 'auto' }}>
+        <ListSubheader component="div">Shop</ListSubheader>
+      </ImageListItem>
+      {filterProducts().map((product) => (
+            <ProductCard
               key={product._id}
               _id={product._id}
               image={product.image}
@@ -57,14 +84,10 @@ function ProductList() {
               price={product.price}
               quantity={product.quantity}
             />
-          ))}
-        </div>
-      ) : (
-        <h3>Give us a sec, just digging through our backpack for all the gear!</h3>
-      )}
-      {loading ? <img src={spinner} alt="loading" /> : null}
-    </div>
-  );
-}
+            ))}
+      </ImageList>
+      </div>
+)}
+
 
 export default ProductList;

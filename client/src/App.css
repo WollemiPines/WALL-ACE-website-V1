@@ -21,6 +21,18 @@
   justify-content: space-between;
 }
 
+.product-cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card{
+  width: 300px;
+  height: 500px;
+  padding: 0 30px 0 30px;
+}
+
 .header_title_login_cart{
   display: flex;
  

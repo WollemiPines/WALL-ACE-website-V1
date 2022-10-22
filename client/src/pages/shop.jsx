@@ -46,9 +46,9 @@ function Shop() {
 
   return (
     <div className="my-2">
-      <h2>Our Products:</h2>
+      <h2>Shop</h2>
       {state.products.length ? (
-        <div className="flex-row">
+        <div className="product-cards-container">
           {filterProducts().map((product) => (
             <ProductCard
               key={product._id}
@@ -61,9 +61,8 @@ function Shop() {
           ))}
         </div>
       ) : (
-        <h3>You haven't added any products yet!</h3>
+        <h3>Give us a sec while we search our packpack for that</h3>
       )}
-      {loading ? <div/> : null}
     </div>
   );
 }
