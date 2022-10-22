@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link as RouterLink, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
+import { Button } from '@material-ui/core';
 
 import Cart from '../components/Cart';
 import { useStoreContext } from '../utils/GlobalState';
@@ -84,31 +85,44 @@ function ProductPage() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
-          <Link to="/shop">← Back to Products</Link>
+        <div className="product-page-container">
+          <div className='product-page-topstrip'>
 
-          <h2>{currentProduct.name}</h2>
-
-          <p>{currentProduct.description}</p>
-
-          <p>
-            <strong>Price:</strong>${currentProduct.price}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
-            <button
-              disabled={!cart.find((p) => p._id === currentProduct._id)}
-              onClick={removeFromCart}
-            >
-              Remove from Cart
-            </button>
-          </p>
+          <Button variant="contained" color="primary" disableElevation component={RouterLink} to="/shop"> Back </Button>
+          <div className='product-page-box-one'>
 
           <img
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
+            <div className='product-page-headingtext'>
+
+                <h2>{currentProduct.name}</h2>
+
+                <Button onClick={addToCart} size="small" color="primary" variant="contained">
+                  Add to Cart
+                </Button>
+                <Button  disabled={!cart.find((p) => p._id === currentProduct._id)}
+                              onClick={removeFromCart} size="small" color="primary" variant="contained">
+                  Remove From Cart
+                </Button>
+            </div>
+
+
+          </div>
+
+          <p>{currentProduct.description}</p>
+
+<p>
+  <strong>Price:</strong>${currentProduct.price}{' '}
+ 
+</p>
+          </div>
+
+        
         </div>
       ) : null}
-      { null}
+      {loading ? <div>loading</div> : null}
       <Cart />
     </>
   );

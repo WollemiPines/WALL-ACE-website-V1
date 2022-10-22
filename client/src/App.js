@@ -19,7 +19,7 @@ import Projects from './pages/projects';
 import Disclaimers from './pages/disclaimers';
 import Shop from './pages/shop';
 import CartPage from './pages/cartPage';
-import Detail from "./pages/Detail"
+import ProductPage from "./pages/ProductPage"
 import NotFound from "./pages/404NotFound"
 import SignupLogin from './pages/signuplogin';
 import PurchaceComplete from './pages/purchaceComplete';
@@ -58,7 +58,7 @@ function App() {
       <Route exact path="/projects" element={<Projects />} />
       <Route exact path="/disclaimers" element={<Disclaimers />} />
       <Route exact path="/cart" element={<CartPage />} />
-      <Route exact path="/products/:id" element={<Detail />} />
+      <Route exact path="/products/:id" element={<ProductPage />} />
       <Route exact path="/signup" element={<SignupLogin />} />
       <Route exact path="/purchacecomplete" element={<PurchaceComplete />} />
       <Route exact path="*" element={<NotFound />} />
