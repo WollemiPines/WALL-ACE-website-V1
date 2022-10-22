@@ -76,13 +76,11 @@ function ProductCard(item) {
   <Card className={classes.root}>
     <Link to={`/products/${_id}`}>
   <CardActionArea>
-    <CardMedia
-      component="img"
-      alt={name}
-      height="140"
-      image={image}
-      title={name}
-    />
+  <img
+            src={`/images/${image}`}
+            alt={name}
+            height = "200px"
+          />
     <CardContent>
       <Typography gutterBottom variant="h5" component="h2">
         {name}

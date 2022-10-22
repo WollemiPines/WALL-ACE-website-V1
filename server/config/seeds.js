@@ -34,7 +34,7 @@ db.once('open', async () => {
         WLL - 4.5kn
         
         Stretch between 3.5kn and 4.5kn - 2%`,
-      image: ['cookie-tin.jpg'],
+      image: 'products/Duct-tape/duct-tape.jpg',
       category: [categories[1]._id, categories[6]._id],
       price: 79,
       quantity: 20
@@ -69,7 +69,7 @@ db.once('open', async () => {
         Festivals
         
         These contrasting colours and retro design matches with any festival outfit, a great way to avoid losing valuables and always having what you need, when you need it. `,
-      image: 'canned-coffee.jpg',
+      image: 'products/Bum-Bag/bum-bag.jpg',
       category: [categories[0]._id, categories[1]._id, categories[2]._id, categories[4]._id],
       price: 55,
       quantity: 10
@@ -101,8 +101,7 @@ db.once('open', async () => {
         
         Please read and understand all associated disclaimers before use. Product photos are for demonstration only and are not intended as rigging advice or instruction.
         *Price match is only valid for comparable UHMWPE webbings designed and sold for slackline use, price match is only related to retail price of comparable goods including measure, cutting and sewing costs (not inculding shipping).`,
-        image: [
-        '5.jpg'],
+        image: 'products/steel-cable/5.jpg',
         price: 599,
       quantity: 20
     },
@@ -128,6 +127,7 @@ db.once('open', async () => {
        - Revolutionary cinch design, the easiest to use on the market.
        
        - Only 75 grams per piece (single layer) and 115g for double layer`,
+       image: 'products/Abseil-Pro/abseil-pro.jpg',
       price: 20,
       quantity: 50
     },
@@ -143,6 +143,7 @@ db.once('open', async () => {
         Don't be fooled, this is in no way inferior to other rope pro options on the market, in fact it's heavier duty than most, Wall Ace can achive such low costs purely by stripping out all the unessecary extras. This means no neat trims, fancy clip loops or even branded labels. The DC Rope Apparel Range is 100% pure abrasion resistance. 
         
         Don't forget to check out the larger sizes and bulk order discounts too!`,
+        image: 'products/DC-small/DC-small.jpg',
       price: 6.50,
       quantity: 100
     },
@@ -158,7 +159,7 @@ db.once('open', async () => {
         Don't be fooled, this is in no way inferior to other rope pro options on the market, in fact it's heavier duty than most, Wall Ace can achive such low costs purely by stripping out all the unessecary extras. This means no neat trims, fancy clip loops or even branded labels. The DC Rope Apparel Range is 100% pure abrasion resistance. 
         
         Don't forget to check out the other sizes and bulk order discounts too!`,
-      image: 'camera.jpg',
+      image: 'products/DC-medium/DC-medium.jpg',
       price: 8.50,
       quantity: 100
     },
@@ -174,7 +175,7 @@ db.once('open', async () => {
        - Soft outer layer is easy on sensitive structures and painted walls.
        - Comes with 2x velcro straps, making it the most versatile piece of rope protection in your kit. Simply lay it out flat, protecting a large section of edge, and strap your anchor or ropes securely to it. 
        - Heavy duty but still lightweight at only 350g per piece`,
-      image: 'tablet.jpg',
+      image: 'products/Bomber-Pro/bomber-pro.JPG',
       price: 40,
       quantity: 2
     },
@@ -219,10 +220,81 @@ db.once('open', async () => {
        - Soft outer layer is easy on sensitive structures and painted walls.- Comes with 2x velcro straps, making it the most versatile piece of rope protection in your kit. Simply lay it out flat, protecting a large section of edge, and strap your anchor or ropes securely to it.
        
        - Heavy duty but still lightweight at only 350g per piece`,
-      image: 'bedtime-book.jpg',
+      image: 'products/Tuxedo/tuxedo.JPG',
       price: 120,
       quantity: 2
-    }
+    },{
+    name: 'Lead Rigger Belt',
+    category: [categories[0]._id, categories[1]._id, categories[7]._id],
+    description:
+     `Soft, secure and strong. 
+
+     The lead rigger belt is made from a range of classic climb spec tubular webbings, a real throw-back to 80's climbing culture.
+     
+     The buckle is CNC cut from 7075 aircraft grade aluminum in a two part system to allow smooth adjustment and no slippage.
+     
+     Finally the belt is sewn together in Sydney Australia using UHMWPE bartacks to provide an ultra high strength assembly
+     
+     Belts are 1100mm long (when measured opened up), this fits a maximum waist size of 39 Inches (allowing for 80mm of tail).
+     Please get in touch if you would like a longer option. `,
+    image: 'products/Belts/Belt.JPG',
+    price: 35,
+    quantity: 10
+  },
+  {
+    name: 'Hex Reslinging',
+    category: [categories[0]._id, categories[3]._id],
+    description:
+     `Now available at Wall Ace, Australia's only Re-Slinging service for only $14 per hex.
+
+     International shipping is hugely expensive so by getting your slings replaced locally, you can save cash and an excessive carbon footprint. 
+     
+     NOTE: It is the buyers responiblity to read and understand all disclaimers for this product. Available by clicking HERE
+     
+     Due to the low volume of replacements its simply not possible to stock every colour. The 16mm wide UMHPWE (Dyneema) webbing is custom made specifically for this purpose and requires a significant investment. If you'd like to see more colours in the future, help us out by adding a few meters of the webbing to your checkout. It's exellent anchor material for multi pitch climbing , highlines, canyons and bail tat. 
+     
+     It is the responsibility of the user to ensure their gear is regularly inspected and assessed. It is their responsibility to make judgements regarding the strength and integrity of their equipment.`,
+    image: 'products/Hex-Reslings/hex-reslings.JPG',
+    price: 14,
+    quantity: 2
+  },
+  {
+    name: 'Tape',
+    category: [categories[1]._id, categories[7]._id],
+    description:
+     `This 25mm filament tape is perfect for taping the main and backup's together on your highlines. 
+     This is a medium durability version, a great low cost option that is significantly better than vinyl electrical tape. 
+     
+     - 45m long
+     - 25mm wide
+     - Unidirectional glass fibre reniforcement 
+     - Low residude
+     
+     - Super thin, enabling more wraps per tape point
+     
+     - 145kg breaking force with four wraps, thats 4.9x stonger than PVC electrical tape`,
+    image: 'products/Tape/tape.JPG',
+    price: 8.50,
+    quantity: 2
+  },
+  {
+    name: 'Spacers',
+    category: [categories[1]._id, categories[7]._id],
+    description:
+     `Exclusive to Wall Ace
+
+     Would you like to use 20mm webbing, but only have 25mm weblocks?
+     Throw a couple of these in your cart and double the versitility of your gear. 
+     The inovative design allows the spacers to *click* into position allowing easier installation of the webbing and a significantly reduced chance of dropping them
+     
+     Currently available 
+     - Purelock Spacers (2.5mm thick)
+     
+     ...More weblock spacers to come...`,
+    image: 'products/Spacers/spacers.JPG',
+    price: 15,
+    quantity: 2
+  },
   ]);
 
   console.log('products seeded');
