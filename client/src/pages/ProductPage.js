@@ -86,18 +86,22 @@ function ProductPage() {
     <>
       {currentProduct && cart ? (
         <div className="product-page-container">
-          <div className='product-page-topstrip'>
 
+          <div className='product-page-top-strip'>
           <Button variant="contained" color="primary" disableElevation component={RouterLink} to="/shop"> Back </Button>
+          </div>
+
           <div className='product-page-box-one'>
 
           <img
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
-            <div className='product-page-headingtext'>
+            <div className='product-page-optionsbox'>
 
                 <h2>{currentProduct.name}</h2>
+
+                <p> <strong>Price:</strong>${currentProduct.price}{' '} </p> 
 
                 <Button onClick={addToCart} size="small" color="primary" variant="contained">
                   Add to Cart
@@ -107,20 +111,18 @@ function ProductPage() {
                   Remove From Cart
                 </Button>
             </div>
-
-
           </div>
+
+          <div className='product-page-description'>
 
           <p>{currentProduct.description}</p>
 
-<p>
-  <strong>Price:</strong>${currentProduct.price}{' '}
- 
-</p>
+          </div>
+          
+
           </div>
 
         
-        </div>
       ) : null}
       {loading ? <div>loading</div> : null}
       <Cart />
