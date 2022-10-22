@@ -93,7 +93,7 @@ function ProductPage() {
 
           <div className='product-page-box-one'>
 
-          <img
+          <img className='product-page-img-main'
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />

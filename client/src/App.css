@@ -48,23 +48,44 @@
 .product-page-top-strip{
   display: flex;
   justify-content: flex-end;
-  margin-right: 30px;
-  margin-top: 10px;
+  padding-right: 30px;
+  padding-top: 10px;
 }
 
 .product-page-box-one{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0 15% 0 15%;
 }
 
 .product-page-optionsbox{
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 0 15px 0 15px;
+  padding: 0 15px 0 15px;
 }
 
+@media screen and (max-width: 2500px) {
+  .product-page-img-main{
+    width:600px;
+    height:auto;
+  }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .product-page-img-main{
+      width:450px;
+      height:stretch;
+    }
+    }
+
+@media screen and (max-width: 520px) {
+  .product-page-img-main{
+    width:200px;
+    height:stretch;
+  }
+}  
 
 .header_title_login_cart{
   display: flex;
