@@ -34,7 +34,7 @@ db.once('open', async () => {
         WLL - 4.5kn
         
         Stretch between 3.5kn and 4.5kn - 2%`,
-      image: 'cookie-tin.jpg',
+      image: ['cookie-tin.jpg'],
       category: [categories[1]._id, categories[6]._id],
       price: 79,
       quantity: 20
@@ -101,7 +101,9 @@ db.once('open', async () => {
         
         Please read and understand all associated disclaimers before use. Product photos are for demonstration only and are not intended as rigging advice or instruction.
         *Price match is only valid for comparable UHMWPE webbings designed and sold for slackline use, price match is only related to retail price of comparable goods including measure, cutting and sewing costs (not inculding shipping).`,
-      price: 599,
+        image: [
+        '5.jpg'],
+        price: 599,
       quantity: 20
     },
     {
@@ -220,41 +222,6 @@ db.once('open', async () => {
       image: 'bedtime-book.jpg',
       price: 120,
       quantity: 2
-    },
-    {
-      name: 'Spinning Top',
-      category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
-      price: 1.99,
-      quantity: 1000
-    },
-    {
-      name: 'Set of Plastic Horses',
-      category: categories[4]._id,
-      description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
-      quantity: 100
-    },
-    {
-      name: 'Alphabet Blocks',
-      category: categories[4]._id,
-      description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
-      price: 9.99,
-      quantity: 600
     }
   ]);
 
