@@ -11,16 +11,87 @@
 
 /* HEADER COMPONENT */
 
-.header_container_two{
-  background-image: url("./images/header_photo.jpeg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+.header_container{
+  /* background-image: url("./images/header_photo.jpeg"); */
+  /* background-size: 100%; */
+  /* background-repeat: no-repeat; */
 
 }
 .header_title{
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
+}
+/* HEADER */
+
+.logo-header{
+  width: 300px;
+}
+
+.header-links{
+  margin-top: 0px;
+}
+
+.logsignbttn{
+  height:50px
+}
+
+.header_title_login_cart{
+  display: flex;
+ 
+}
+
+.cart_icon_testblank{
+  background-image: url("./images/cart_icon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* NAVBAR  */
+.nav-list{
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color:rgb(42, 147, 0);
+  width: 100%;
+}
+
+.nav-list a :active :hover{
+  color: rgb(32, 102, 4);
+}
+
+.nav-list a :visited{
+  color: inherit;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+/* HOMEPAGE */
+.homepage-container{
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+.homepage-sub-container-1, .homepage-sub-container-2{
+  padding:0  5% 0 5%;
+  width: 40%
+}
+
+.homepage-main-img{
+  padding-top:10px;
+  width: stretch
+}
+
+.homepage-shopnowbttn{
+  width:200px
 }
 
 /* SHOP PAGE */
@@ -86,43 +157,6 @@
     height:stretch;
   }
 }  
-
-.header_title_login_cart{
-  display: flex;
- 
-}
-
-.cart_icon_testblank{
-  background-image: url("./images/cart_icon.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-/* NAVBAR  */
-.nav-list{
-  display: flex;
-  align-items: center;
-  background-color: #333;
-  color:rgb(42, 147, 0);
-  width: 100%;
-}
-
-.nav-list a :active :hover{
-  color: rgb(32, 102, 4);
-}
-
-.nav-list a :visited{
-  color: inherit;
-}
-
-.nav-list ul {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  gap: 2rem;
-  padding: 1rem;
-  list-style: none;
-}
 
 
 /* Link fottating */

@@ -15,8 +15,9 @@ function Header() {
       <div className="header_container_two">
       <div className="header_title">
         <h1 className="main-header">Wall Ace</h1>
+        <img className='logo-header' alt="Logo" src='/images/header/logo.jpg'/>
         <div className="header_title_login_cart">
-        <Button variant="contained" color="primary" disableElevation component={RouterLink} to="/signup"> Login/Signup </Button>
+        <Button className="logsignbttn" variant="contained" color="primary" disableElevation component={RouterLink} to="/signup"> Login/Signup </Button>
         <IconButton color="primary" aria-label="add to shopping cart">
           <Cart/>
         </IconButton>
