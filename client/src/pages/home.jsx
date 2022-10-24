@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Button } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
 import { Link as RouterLink } from 'react-router-dom';
+import Productslider from '../components/Productslider';
 
 
 class Home extends React.Component {
@@ -15,6 +16,8 @@ class Home extends React.Component {
   justifyContent="center"
   alignItems="stretch"
 >
+  <div className='homepage-top-level'>
+    {/* <Productslider/> */}
   <div className='homepage-container'>
     <div className="homepage-sub-container-1">
         <h1>TEXTILE ENGINEERING</h1>
@@ -30,7 +33,7 @@ class Home extends React.Component {
 <li>Can the design, as much as the materials withstand abuse and misuse? </li>
 </ul>
 Some of our innovations are obvious in items such as the Abseil Pro rope protection and the Twist n' Tag. In others, such as the Wall Ace Soft Release, the simplicity of form, reveals itself with every new use. Our retro bum bags are a classic bestseller, good for almost any adventure while the more specialty items such as the leg bags can solve unique yet annoying issues. Need strong and reliable and loops sewn in your slackline webbing? A broken buckle on your favourite hiking pack? We can repair it. Even climbing bolts, home woodys and other timber and metalwork is possible, simply get in touch. </p>
-        <Button className="homepage-shopnowbttn" variant="contained" color="primary" disableElevation component={RouterLink} to="/shop"> Shop Now! </Button>
+        <Button className="homepage-shopnowbttn" variant="contained" color="primary" disableElevation component={RouterLink} to="/contact"> Contact </Button>
     
     </div>
     
@@ -38,6 +41,7 @@ Some of our innovations are obvious in items such as the Abseil Pro rope protect
     <div className="homepage-sub-container-2">
         <img className='homepage-main-img' alt="Logo" src='/images/homepage/tom-the-fear.jpg'/>
     </div>
+  </div>
   </div>
         
 
