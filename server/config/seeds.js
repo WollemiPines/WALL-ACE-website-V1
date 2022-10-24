@@ -69,7 +69,7 @@ db.once('open', async () => {
         Festivals
         
         These contrasting colours and retro design matches with any festival outfit, a great way to avoid losing valuables and always having what you need, when you need it. `,
-      image: 'products/Bum-Bag/1.jpg',
+      image: 'products/Bum-bag/1.jpg',
       category: [categories[0]._id, categories[1]._id, categories[2]._id, categories[4]._id],
       price: 55,
       quantity: 10
@@ -127,7 +127,7 @@ db.once('open', async () => {
        - Revolutionary cinch design, the easiest to use on the market.
        
        - Only 75 grams per piece (single layer) and 115g for double layer`,
-       image: 'products/Abseil-Pro/1.jpg',
+       image: 'products/Abseil-pro/1.jpg',
       price: 20,
       quantity: 50
     },
