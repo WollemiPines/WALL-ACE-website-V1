@@ -7,10 +7,11 @@ import { Button } from '@material-ui/core';
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
-  const [addUser] = useMutation(ADD_USER);
+  const [addUser, { error }] = useMutation(ADD_USER);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+    try {
     const mutationResponse = await addUser({
       variables: {
         email: formState.email,
@@ -21,6 +22,10 @@ function Signup(props) {
     });
     const token = mutationResponse.data.addUser.token;
     Auth.login(token);
+  }
+  catch (e) {
+    console.log(e);
+  }
   };
 
   const handleChange = (event) => {
@@ -36,28 +41,30 @@ function Signup(props) {
 
       <h2>Signup</h2>
       <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="firstName">First Name:</label>
-          <input
-            placeholder="First"
+        <div className="form-bttn">
+          <label htmlFor="firstName"></label>
+          <TextField
+            placeholder="First Name"
             name="firstName"
             type="firstName"
             id="firstName"
+            variant="outlined"
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="lastName">Last Name:</label>
-          <input
-            placeholder="Last"
+        <div className="form-bttn">
+          <label htmlFor="lastName"></label>
+          <TextField
+            placeholder="Last Name"
             name="lastName"
             type="lastName"
             id="lastName"
+            variant="outlined"
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email:</label>
+        <div className="form-bttn">
+          <label htmlFor="email"></label>
           <TextField
           label="Email@email.com" 
           name="email"
@@ -67,8 +74,8 @@ function Signup(props) {
           onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
+        <div className="form-bttn">
+          <label htmlFor="pwd"></label>
           <TextField
           id="pwd"
           label="Password"
@@ -80,8 +87,14 @@ function Signup(props) {
         />
      
         </div>
+        {error ? (
+          <div>
+            <p className="error-text">Please enter a unique email and/or password with min 5 charaters</p>
+          </div>
+        ) : null}
+
         <div>
-          <Button type="submit" color="primary">Submit</Button>
+          <Button onSubmit={handleFormSubmit} type="submit" color="primary">Submit</Button>
         </div>
       </form>
     </div>

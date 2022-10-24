@@ -4,8 +4,9 @@ class Disclaimers extends React.Component {
     
   render() {
       return (
-    <div>
+    <div className='disclaimers-container'>
          <h1>Disclaimers</h1>
+         <p>Comming Soon</p>
  </div>
   )
     }

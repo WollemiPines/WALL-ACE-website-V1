@@ -11,12 +11,7 @@
 
 /* HEADER COMPONENT */
 
-.header_container{
-  /* background-image: url("./images/header_photo.jpeg"); */
-  /* background-size: 100%; */
-  /* background-repeat: no-repeat; */
 
-}
 .header_title{
   padding-left: 20px;
   display: flex;
@@ -73,7 +68,19 @@
   list-style: none;
 }
 
+/* ALL PAGES */
+.projects-container, .disclaimers-container{
+ padding: 0 5% 0 5%;
+}
+
+/* Sign-LogIn Page */
+
+.form-bttn{
+  padding: 5px 0 5px 0;
+}
+
 /* HOMEPAGE */
+
 .homepage-container{
   display: flex;
   justify-content: center;
@@ -93,6 +100,24 @@
 .homepage-shopnowbttn{
   width:200px
 }
+
+/* CONTACT PAGE */
+.contact-container{
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+.contact-sub-container-1, .contact-sub-container-2{
+  padding:0  5% 0 5%;
+  width: 40%
+}
+
+.contact-main-img{
+  padding-top:10px;
+  width: stretch
+}
+
 
 /* SHOP PAGE */
 

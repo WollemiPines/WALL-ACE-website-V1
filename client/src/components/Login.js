@@ -4,6 +4,7 @@ import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
+import { Button } from '@material-ui/core';
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -35,11 +36,11 @@ function Login(props) {
 
       <h2>Login</h2>
       <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email address:</label>
+        <div className="form-bttn">
+          <label htmlFor="email"></label>
 
           <TextField
-          label="Email@email.com" 
+          label="Email Address" 
           name="email"
           type="email" 
           variant="outlined"
@@ -47,13 +48,14 @@ function Login(props) {
           onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
-          <input
-            placeholder="******"
+        <div className="form-bttn">
+          <label htmlFor="pwd"></label>
+          <TextField
+            placeholder="Password"
             name="password"
             type="password"
             id="pwd"
+            variant="outlined"
             onChange={handleChange}
           />
         </div>
@@ -63,7 +65,7 @@ function Login(props) {
           </div>
         ) : null}
         <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
+        <Button onSubmit={handleFormSubmit} type="submit" color="primary">Submit</Button>
         </div>
       </form>
     </div>

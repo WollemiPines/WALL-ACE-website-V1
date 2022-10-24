@@ -46,7 +46,7 @@ function Shop() {
 
   return (
     <div className="my-2">
-      <h2>Shop</h2>
+      
       {state.products.length ? (
         <div className="product-cards-container">
           {filterProducts().map((product) => (
