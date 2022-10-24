@@ -48,19 +48,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 700px) {
-  .header_title_login_cart {
-   padding-top: 250px;
-   justify-content: center;
-  }
-  .header_title{
-    margin-top: -250px;
- 
-  }
-  .nav-list{
-margin-top: 70px;
-  }
-}  
+
 
 /* NAVBAR  */
 .nav-list{
@@ -265,3 +253,25 @@ nav {
 
 
 }
+
+/*Header and Navbar */
+@media screen and (max-width: 700px) {
+  .header_title_login_cart {
+   padding-top: 250px;
+   justify-content: center;
+  }
+  .header_title{
+    margin-top: -250px;
+  }
+  .nav-list{
+margin-top: 70px;
+  }
+  .h-ref{
+    font-size: 10px;
+  }
+.nav-list ul{
+  grid-gap: 0;
+  gap: 0;
+  padding:0
+}
+}  
