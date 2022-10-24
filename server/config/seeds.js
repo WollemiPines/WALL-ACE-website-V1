@@ -127,7 +127,7 @@ db.once('open', async () => {
        - Revolutionary cinch design, the easiest to use on the market.
        
        - Only 75 grams per piece (single layer) and 115g for double layer`,
-       image: 'products/Abseil-Pro/abseil-pro.jpg',
+       image: 'products/Abseil-Pro/1.jpg',
       price: 20,
       quantity: 50
     },
