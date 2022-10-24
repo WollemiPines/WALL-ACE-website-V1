@@ -7,7 +7,7 @@ export default function Cart() {
       <div className="cart_icon_container">
       
          <Link to="/cart">  
-         <img alt="Cart" src='public/images/icons/cart.jpg'/>
+         <img className='cart-icon' alt="Cart" src='/images/icons/cart.jpg'/>
          </Link>
   
       </div>

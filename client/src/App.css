@@ -43,12 +43,6 @@
 }
 
 
-.cart_icon_testblank{
-  background-image: url("./images/cart_icon.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
 
 /* NAVBAR  */
 .nav-list{
@@ -75,6 +69,8 @@
   padding: 1rem;
   list-style: none;
 }
+
+
 
 /* ALL PAGES */
 .projects-container, .disclaimers-container{
@@ -170,6 +166,14 @@
   padding: 0 15px 0 15px;
 }
 
+
+/* Cart Icon */
+.cart-icon{
+  height: 25px;
+}
+.MuiButtonBase-root .MuiIconButton-root .addtocart .MuiIconButton-colorPrimary{
+  padding: 0px;
+}
 @media screen and (max-width: 2500px) {
   .product-page-img-main{
     width:600px;

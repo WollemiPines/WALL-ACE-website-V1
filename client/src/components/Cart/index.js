@@ -7,6 +7,7 @@ import CartItem from '../CartItem';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
+import { Button } from '@material-ui/core';
 
 // stripePromise returns a promise with the stripe object as soon as the Stripe package loads
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
@@ -93,7 +94,7 @@ const Cart = () => {
 
             {/* Check to see if the user is logged in. If so render a button to check out */}
             
-              <button onClick={submitCheckout}>Checkout</button>
+              <Button onClick={submitCheckout} className="checkout-bttn" variant="contained" color="primary" disableElevation > Checkout </Button>
             
             
           </div>
