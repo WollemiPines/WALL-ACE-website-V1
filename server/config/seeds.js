@@ -34,7 +34,7 @@ db.once('open', async () => {
         WLL - 4.5kn
         
         Stretch between 3.5kn and 4.5kn - 2%`,
-      image: 'products/Duct-tape/duct-tape.jpg',
+      image: 'products/Duct-tape/1.jpg',
       category: [categories[1]._id, categories[6]._id],
       price: 79,
       quantity: 20
@@ -69,7 +69,7 @@ db.once('open', async () => {
         Festivals
         
         These contrasting colours and retro design matches with any festival outfit, a great way to avoid losing valuables and always having what you need, when you need it. `,
-      image: 'products/Bum-Bag/bum-bag.jpg',
+      image: 'products/Bum-Bag/1.jpg',
       category: [categories[0]._id, categories[1]._id, categories[2]._id, categories[4]._id],
       price: 55,
       quantity: 10
@@ -143,7 +143,7 @@ db.once('open', async () => {
         Don't be fooled, this is in no way inferior to other rope pro options on the market, in fact it's heavier duty than most, Wall Ace can achive such low costs purely by stripping out all the unessecary extras. This means no neat trims, fancy clip loops or even branded labels. The DC Rope Apparel Range is 100% pure abrasion resistance. 
         
         Don't forget to check out the larger sizes and bulk order discounts too!`,
-        image: 'products/DC-small/DC-small.jpg',
+        image: 'products/DC-small/1.jpg',
       price: 6.50,
       quantity: 100
     },
@@ -159,7 +159,7 @@ db.once('open', async () => {
         Don't be fooled, this is in no way inferior to other rope pro options on the market, in fact it's heavier duty than most, Wall Ace can achive such low costs purely by stripping out all the unessecary extras. This means no neat trims, fancy clip loops or even branded labels. The DC Rope Apparel Range is 100% pure abrasion resistance. 
         
         Don't forget to check out the other sizes and bulk order discounts too!`,
-      image: 'products/DC-medium/DC-medium.jpg',
+      image: 'products/DC-medium/1.jpg',
       price: 8.50,
       quantity: 100
     },
@@ -175,7 +175,7 @@ db.once('open', async () => {
        - Soft outer layer is easy on sensitive structures and painted walls.
        - Comes with 2x velcro straps, making it the most versatile piece of rope protection in your kit. Simply lay it out flat, protecting a large section of edge, and strap your anchor or ropes securely to it. 
        - Heavy duty but still lightweight at only 350g per piece`,
-      image: 'products/Bomber-Pro/bomber-pro.jpg',
+      image: 'products/Bomber-Pro/1.jpg',
       price: 40,
       quantity: 2
     },
@@ -220,7 +220,7 @@ db.once('open', async () => {
        - Soft outer layer is easy on sensitive structures and painted walls.- Comes with 2x velcro straps, making it the most versatile piece of rope protection in your kit. Simply lay it out flat, protecting a large section of edge, and strap your anchor or ropes securely to it.
        
        - Heavy duty but still lightweight at only 350g per piece`,
-      image: 'products/Tuxedo/tuxedo.jpg',
+      image: 'products/Tuxedo/1.jpg',
       price: 120,
       quantity: 2
     },{
@@ -237,7 +237,7 @@ db.once('open', async () => {
      
      Belts are 1100mm long (when measured opened up), this fits a maximum waist size of 39 Inches (allowing for 80mm of tail).
      Please get in touch if you would like a longer option. `,
-    image: 'products/Belts/Belt.jpg',
+    image: 'products/Belts/1.jpg',
     price: 35,
     quantity: 10
   },
@@ -254,7 +254,7 @@ db.once('open', async () => {
      Due to the low volume of replacements its simply not possible to stock every colour. The 16mm wide UMHPWE (Dyneema) webbing is custom made specifically for this purpose and requires a significant investment. If you'd like to see more colours in the future, help us out by adding a few meters of the webbing to your checkout. It's exellent anchor material for multi pitch climbing , highlines, canyons and bail tat. 
      
      It is the responsibility of the user to ensure their gear is regularly inspected and assessed. It is their responsibility to make judgements regarding the strength and integrity of their equipment.`,
-    image: 'products/Hex-Reslings/hex-reslings.jpg',
+    image: 'products/Hex-Reslings/1.jpg',
     price: 14,
     quantity: 2
   },
@@ -273,7 +273,7 @@ db.once('open', async () => {
      - Super thin, enabling more wraps per tape point
      
      - 145kg breaking force with four wraps, thats 4.9x stonger than PVC electrical tape`,
-    image: 'products/Tape/tape.jpg',
+    image: 'products/Tape/1.jpg',
     price: 8.50,
     quantity: 2
   },
@@ -291,7 +291,7 @@ db.once('open', async () => {
      - Purelock Spacers (2.5mm thick)
      
      ...More weblock spacers to come...`,
-    image: 'products/Spacers/spacers.jpg',
+    image: 'products/Spacers/1.jpg',
     price: 15,
     quantity: 2
   },
