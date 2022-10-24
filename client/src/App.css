@@ -15,12 +15,23 @@
 .header_title{
   padding-left: 20px;
   display: flex;
-  justify-content: space-between;
+
 }
+
 /* HEADER */
 
 .logo-header{
-  width: 300px;
+  width: 250px;
+  margin-top: -50px;
+}
+.header_title{
+  display: flex;
+  justify-content: center;
+}
+
+.header_title_login_cart{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header-links{
@@ -31,16 +42,25 @@
   height:50px
 }
 
-.header_title_login_cart{
-  display: flex;
- 
-}
 
 .cart_icon_testblank{
   background-image: url("./images/cart_icon.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 700px) {
+  .header_title_login_cart {
+   padding-top: 250px;
+   justify-content: center;
+  }
+  .header_title{
+    margin-top: -250px;
+ 
+  }
+  .nav-list{
+margin-top: 70px;
+  }
+}  
 
 /* NAVBAR  */
 .nav-list{
