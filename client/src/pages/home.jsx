@@ -16,8 +16,7 @@ class Home extends React.Component {
   justifyContent="center"
   alignItems="stretch"
 >
-  <div className='homepage-top-level'>
-    {/* <Productslider/> */}
+  
   <div className='homepage-container'>
     <div className="homepage-sub-container-1">
         <h1>TEXTILE ENGINEERING</h1>
@@ -42,8 +41,7 @@ Some of our innovations are obvious in items such as the Abseil Pro rope protect
         <img className='homepage-main-img' alt="Logo" src='/images/homepage/tom-the-fear.jpg'/>
     </div>
   </div>
-  </div>
-        
+
 
        </Grid>
        
