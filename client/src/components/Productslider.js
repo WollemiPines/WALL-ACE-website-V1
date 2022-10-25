@@ -68,7 +68,7 @@ export default function Productslider(item) {
         quantity={product.quantity}
       />
     ))}
-  </div>
+ 
 
     <div className={classes.root}>
       <ImageList className={classes.imageList} cols={2.5}>
@@ -90,6 +90,7 @@ export default function Productslider(item) {
           </ImageListItem>
         ))}
       </ImageList>
+    </div>
     </div>
   );
 }
