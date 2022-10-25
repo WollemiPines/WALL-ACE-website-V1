@@ -21,9 +21,14 @@ Producing equiptment is only half the difficulty, often the sale of goods is mor
 React, thporugh its components has has also enabled the easy updating of information and expanding of the site in the future.
 
 ## Media: <a name="media"></a>
-example
+Here is a screenshot of the homepage
 ![Example](/client/public/images/wall-ace-website.herokuapp.com_.png)
-
+Here is a screenshot of the shop page
+![Example](/client/public/images/wall-ace-website.herokuapp.com_shop.png)
+Here is a screenshot of the product page
+![Example](/client/public/images/product_page.png)
+Here is a screenshot of the cart
+![Example](/client/public/images/cart_page.png)
 ## Contribution guidelines: <a name="contribute"></a>
 Create a fork of this repo to work on expanding the functionality
 
