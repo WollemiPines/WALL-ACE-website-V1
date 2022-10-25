@@ -46,51 +46,51 @@ const useStyles = makeStyles((theme) => ({
  *   },
  * ];
  */
-export default function Productslider(item) {
-  const classes = useStyles();
+// export default function Productslider(item) {
+//   const classes = useStyles();
   
-  const {
-    image,
-    name,
-    _id,
-    price,
-  } = item;
+//   const {
+//     image,
+//     name,
+//     _id,
+//     price,
+//   } = item;
 
-  return (
-    <div className="product-cards-container">
-    {filterProducts().map((product) => (
-      <ProductCard
-        key={product._id}
-        _id={product._id}
-        image={product.image}
-        name={product.name}
-        price={product.price}
-        quantity={product.quantity}
-      />
-    ))}
+//   return (
+//     <div className="product-cards-container">
+//     {filterProducts().map((product) => (
+//       <ProductCard
+//         key={product._id}
+//         _id={product._id}
+//         image={product.image}
+//         name={product.name}
+//         price={product.price}
+//         quantity={product.quantity}
+//       />
+//     ))}
  
 
-    <div className={classes.root}>
-      <ImageList className={classes.imageList} cols={2.5}>
-        {item.map((item) => (
-          <ImageListItem  key={_id}>
-            <img src={`/images/${image}`} alt={name} />
-            <ImageListItemBar
-              name={name}
-              classes={{
-                root: classes.titleBar,
-                title: classes.title,
-              }}
-              actionIcon={
-                <IconButton aria-label={`star ${name}`}>
-                  <div className={classes.title} />
-                </IconButton>
-              }
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
-    </div>
-    </div>
-  );
-}
+//     <div className={classes.root}>
+//       <ImageList className={classes.imageList} cols={2.5}>
+//         {item.map((item) => (
+//           <ImageListItem  key={_id}>
+//             <img src={`/images/${image}`} alt={name} />
+//             <ImageListItemBar
+//               name={name}
+//               classes={{
+//                 root: classes.titleBar,
+//                 title: classes.title,
+//               }}
+//               actionIcon={
+//                 <IconButton aria-label={`star ${name}`}>
+//                   <div className={classes.title} />
+//                 </IconButton>
+//               }
+//             />
+//           </ImageListItem>
+//         ))}
+//       </ImageList>
+//     </div>
+//     </div>
+//   );
+// }
