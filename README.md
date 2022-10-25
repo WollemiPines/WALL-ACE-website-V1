@@ -22,7 +22,7 @@ React, thporugh its components has has also enabled the easy updating of informa
 
 ## Media: <a name="media"></a>
 example
-![Example](./public/images/wall-ace-website.herokuapp.com_.png)
+![Example](/client/public/images/wall-ace-website.herokuapp.com_.png)
 
 ## Contribution guidelines: <a name="contribute"></a>
 Create a fork of this repo to work on expanding the functionality
