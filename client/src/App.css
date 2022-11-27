@@ -131,6 +131,13 @@
   background-color: rgb(221, 72, 72);
   padding: 20px 60px 20px 60px;
 }
+.disclaimer-red, h1 p{
+color: white;
+}
+
+.disclaimer-body{
+  padding: 20px 60px 20px 60px;
+}
 
 
 /* SHOP PAGE */
