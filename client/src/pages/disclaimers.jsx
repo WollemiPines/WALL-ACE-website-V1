@@ -5,7 +5,7 @@ class Disclaimers extends React.Component {
   render() {
       return (
     <div className='disclaimers-container'>
-         <div classname='disclaimer-red'> 
+         <div className='disclaimer-red'> 
          <h1>Warning! Activities of any kind can be dangerous!</h1>
          <p>Wall Ace, to the best of its abilities, designs and manufactures high-quality outdoor goods. It is impossible to ensure the safety and security of its products short or long term. It is the responsibility of the product user to carefully inspect and assess the integrity and quality of their gear before EVERY use and at regular intervals between uses. Failure to do so can result in severe injury or death.
 Wall Ace accepts no liability for harm to person or property from the use or misuse of its products. 
@@ -13,7 +13,7 @@ No product is rated or intended to hold a human in any way, implied or otherwsie
 If a product is determined or perceived to be, including not limited to, damaged, excessively worn, used beyond its Working Load Limit (WLL), in-service exceeding the recommended lifespan, malfunctioning, visually inconsistent, contaminated or in any way unsafe, it is to be retired and destroyed immediately.
 </p>
 </div>
-<div classname='disclaimer-body'>
+<div className='disclaimer-body'>
 <h1>
 Disclaimer Continued...
 </h1>
