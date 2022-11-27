@@ -22,6 +22,30 @@ This is a collection of instruction manuals associated with Wall Ace Products. W
   No product is rated in any capacity, implied or otherwise, to hold human life. Any values are given indicating MBS (Maximum Breaking Strength) or WLL (Working Load Limit) are purely for the use of inanimate loads, pertaining no compensatable value. Using the product for anything of real value or in any circumstance that could lead to injury or death is not condoned or recommended by Wall Ace.
  Failure to properly remove and destroy faulty equipment can lead to severe injury or death, the purchaser accepts this responsibility upon receiving of goods, paid or otherwise. In the case of resale to third parties, it Is the responsibility of the resaler to provide any and all safety information related to the product.
 </p>
+<h1>
+Instruction manuals
+</h1>
+<p>
+It is the responsibility of the product owner to ensure that all their Wall Ace products are used correctly at all times.
+
+​
+
+Soft Release: Click here to view Wall Ace Soft release Version 1.1
+
+Sewn Loops (Salcklines, Cams and Hex's): Click here to view Sewn Connections Guidelines V1.0
+
+Webbing and Synthetic Ropes (Soft Shackles and Whoopies): Click here to view Webbing and Synthetic ropes V1.0
+
+Slackline Kit Disclaimer: Click here to view Wall Ace Slackline Kit V1.0
+
+Slackline Kit Manual: Click here to view Wall Ace Slackline Kit Manual V1.1
+​
+Rope Protection (General): 
+ 
+Bum Bags and other storage bags Inc Tag line Bags: 
+ 
+Custom Creations: 
+</p>
 </div>
  </div>
   )
