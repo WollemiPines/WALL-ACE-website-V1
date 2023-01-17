@@ -14,7 +14,7 @@ An e-commerce website to allow the easy display and sale of my products to poten
 
 
 ## Installation Instructions: <a name="install"></a>
-No installation is nessecary, simpily visit the heroku page at: [https://wall-ace-website.herokuapp.com/](https://wall-ace-website.herokuapp.com/)
+No installation is nessecary, simpily visit the heroku page at: [](not currently working, requires updating)
 
 ## Motivation: <a name="motivation"></a>
 Producing equiptment is only half the difficulty, often the sale of goods is more time consuming. Not to mention getting in contact with potential clients. A dedicated website makes running a small business such as Wall Ace, much easier.
